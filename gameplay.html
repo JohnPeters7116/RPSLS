@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8"/>
+    <title>GamePlay</title>
+    <link rel='stylesheet' href='style.css'/>
+    <script src="./modules/jquery.js"></script>
+    <script src='gameplay.js'></script>
+  </head>
+
+  <body>
+    <div class='page'>
+    <header class='game-form'>
+      <div class='instructions-title'>
+        <h1>Rock Paper Scissors Lizzard Spock Game</h1>
+        <p><em>Let's Play! Choose either Rock, Paper, Scissors, Lizzard or Spock.</em></p>
+        <p><em>First to 3 Wins the Game. Refer to the diagram at the bottom for instructions.</em></p>
+      </div>
+    </header>
+
+    <div class='info-container'>
+      <div class='score-keeper-container'>
+        <div class='userScore-container'>
+          <h2>User</h2>
+          <div class='userScore'id='userScore'>0</div>
+        </div>
+
+        <div class='compScore-container'>
+          <h2>Computer</h2>
+          <div class='compScore' id='compScore'>0</div>
+        </div>
+      </div>
+
+      <div class='restart-container'>
+        <button id='restart'class='restart' type='button'>Start
+        </button>
+      </div>
+
+      <div class='timer-container'>
+        <h2 id='timer'>5</h2>
+      </div>
+    </div>
+
+    <fieldset class='user-selection'>
+      <legend>Make Your Pick</legend>
+      <label for='rock' class='radio-label'>
+        <input id='rock'
+        name='game'
+        type='radio'
+        value=1
+        checked/>
+        <img src='images/rock.png'/>
+      </label>
+      <label for='paper' class='radio-label'>
+        <input id='paper'
+        name='game'
+        type='radio'
+        value=2 />
+        <img src='images/paper.png'/>
+      </label>
+      <label for='scissors' class='radio-label'>
+        <input id='scissors'
+        name='game'
+        type='radio'
+        value=3 />
+        <img src='images/scissors.png'/>
+      </label>
+      <label for='lizzard' class='radio-label'>
+      <input id='lizzard'
+        name='game'
+        type='radio'
+        value=4 />
+        <img src='images/lizzard.png'/>
+      </label>
+      <label for='spock' class='radio-label'>
+      <input id='spock'
+      name='game'
+      type='radio'
+      value=5 />
+      <img src='images/spock.png'/>
+      </label>
+    </fieldset>
+
+    <div class='answers-container'>
+
+      <div class='user-container'>
+        <h3 >User</h3>
+        <img id='userAnswer'src='images/rock.png'/>
+      </div>
+
+      <div class='computer-container'>
+        <h3>Computer</h3>
+        <img id='compAnswer'src='images/rock.png'/>
+      </div>
+    </div>
+      <div class='instructions-container'>
+        <h2>Instructions</h2>
+        <img src='images/instructions.jpg'/>
+      </div>
+    </div>
+  </body>
+</html>
